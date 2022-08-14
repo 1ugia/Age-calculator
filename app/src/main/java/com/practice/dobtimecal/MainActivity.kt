@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
         DatePickerDialog(
-            this,
-            DatePickerDialog.OnDateSetListener{
+            this, {
                 view,
                 year,
                 month,
