@@ -32,21 +32,19 @@ class MainActivity : AppCompatActivity() {
         DatePickerDialog(
             this, {
                 view,
-                year,
-                month,
-                dayOfMonth ->
+                selectedYear,
+                selectedMonth,
+                selectedDayOfMonth ->
 
                 Toast.makeText(
                     this,
-                    "btnDateClicker pressed",
+                    "Year: $selectedYear, Month: ${selectedMonth+1}" +
+                            ", Day: $selectedDayOfMonth",
                     Toast.LENGTH_LONG
                 ).show()
 
             }, year, month, day
         ).show()
-        //DatePickerDialog()
-
-
 
     }
 }
